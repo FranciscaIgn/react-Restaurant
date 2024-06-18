@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Satisfy&display=swap');
+.footer {
+    background-color: #5D8990;
+    height: 200px;
+    
+}
+
+.Logo{
+    width: 150px;
+    height: 170px;
+    align-content:normal;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    
+    
+}
+
+.footer-info {
+    width: 20%;
+    padding: 0 20px;
+    margin-top: 25px;
+}
+
+.footer-info h4 {
+    font-family: "Inter", sans-serif;
+    text-decoration:underline;
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: 500;
+    display: block;
+    
+}
+
+.footer-info p {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    color: aliceblue;
+    padding: 0;
+    margin-left: 0;
+    display:inline-flex;
+}
+
+.NavLink {
+    color: aliceblue;
+    display: block;
+}
+

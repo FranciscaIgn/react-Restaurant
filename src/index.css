@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Satisfy&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+Header{
+  background-color: hsl(291, 14%, 45%);
+}
+
+/*NAVBAR*/
+
+a{
+  text-decoration: none;
+}
+
+
+.navbar a {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color:aliceblue;
+  margin-left: 10px;
+  font-family: "Inter", sans-serif;;
+}
+
+
+
+.NavBar{
+  background-color: #5D8990;
+  
+}
+
+/* HOME */
+
+.Principal{
+  width: 100%;
+  height: 688px;
+ margin-bottom: 100px;
+}
+
+.Contenedor {
+  display: grid;
+  
+  align-items: center;
+ 
+}
+ .Lavanda {
+  width: 100%;
+  height: 688px;
+  margin-top: 100px;
+ }
+
+ h1{
+  color: hsl(291, 14%, 45%);
+ }
+
+ .ImagenesHome{
+width:  506px;
+height: 600px;
+padding-bottom: 200px;
+margin-top: 200px;
+ }
+
+ .Cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  padding-left: 5%;
+  margin-bottom: 50px;
+  
+  
+ }
+
+ .Bienvenidos{
+margin-bottom: 70px;
+ }
+ .Platosestaciones{
+  margin-bottom: 20px;
+  color: #7e6383;
+ }
+
+ .title{
+  color: #272128;
+ }
+
+ .Button1{
+  background-color: #5D8990;
+ }
+
+/* NOSOTROS */
+
+
+.Campo{
+  width: 100%;
+  height: 700px;
+}
+
+.parrafoNosotros{
+  background-color:#5D8990 ;
+  height: 300px;
+  width: 89%;
+  margin-left: 80px;
+  
+}
+
+
+
+
+p{
+  text-align: center;
+  padding: 4%;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-family: "Inter", sans-serif;
+  color: aliceblue;
+ 
+}
+.Container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding-left: 5%;
+  
+}
+
+.Restaurant1 {
+  width:80% ;
+  height: 80%;
+}
+.restaurant2 {
+  width:80% ;
+  height: 80%;
+}
+.restaurant3 {
+  width:80% ;
+  height: 80%;
+}
+.restaurant4 {
+  width:80% ;
+  height: 80%;
+}
+.restaurant5 {
+  width:80% ;
+  height: 80%;
+}
+.restaurant6 {
+  width:80% ;
+  height: 80%;
+}
+ /*PLATOS*/
+
+ .Platos{
+  margin-top: 50px;
+  margin-bottom: 50px;
+ }
+ .ParrafoPlatos{
+  background-color: #5D8990;
+ }
+
+ .cardtext {
+  color: #7e6383;
+ }
+
+ .Cards2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding-left: 5%;
+  margin-bottom: 50px;
+ }
+
+ .cocotel1{
+  height: 5px;
+ }
+.Bebidas{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.Postre{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.Postres{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  padding-left: 5%;
+  margin-bottom: 50px;
+}
+
+.Postres-img{
+  width: 400px;
+  height: 400px;
+}
+
+.Postres-img1{
+  width: 400px;
+  height: 550px;
+}
+
+.PostresName{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+.Footer{
+  background-color: #9CBBAC;
+  
+}
+
+
+
+
+
