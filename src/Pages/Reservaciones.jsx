@@ -1,7 +1,5 @@
 import { NavBar } from "../components/NavBar/Navbar"
-import { TablaGetReservas } from "../components/TablaReservacion/TablaReservacion"
-
-
+import { CreateForm } from "../components/Createform/CreateForm"
 export const Reservaciones = () => {
     return(
         <>
@@ -11,7 +9,7 @@ export const Reservaciones = () => {
        <h4>Solo se aceptan reservaciones con 24 hrs de anticipación</h4>
        <h4>Contamos con Estacionamiento</h4>
        
-       <TablaGetReservas />
+       <CreateForm/>
        
         </>
     )

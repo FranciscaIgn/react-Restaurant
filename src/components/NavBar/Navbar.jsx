@@ -14,7 +14,7 @@ export const NavBar= () => {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/Nosotros">Nosotros</Nav.Link>
-            <Nav.Link href="/Reservación">Reservación</Nav.Link>
+            <Nav.Link href="/Reservacion">Reservación</Nav.Link>
             <Nav.Link href="/Blog">Blog</Nav.Link>
             <NavDropdown title="Menú" id="basic-nav-dropdown">
               <NavDropdown.Item href="/Platos">Platos</NavDropdown.Item>

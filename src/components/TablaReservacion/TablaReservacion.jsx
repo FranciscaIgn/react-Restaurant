@@ -20,7 +20,7 @@ export const TablaGetReservas = () => {
      
     useEffect(()=> {
           getReservas()
-    }, [Reservas])
+    }, [])
      
 
 
@@ -41,21 +41,25 @@ export const TablaGetReservas = () => {
             </tr>
       </thead>
       <tbody>
-        {
-            Reservas.map( Reservas => {
-                
-                
+      
+{
+    Reservas.map( reserva => {
+        const fecha = new Date(reserva.Fecha.seconds * 1000);
+        const fechaFormateada = fecha.toLocaleDateString();
+ 
+        return (
+            <tr key={reserva.id}>
+               
+                <th>{reserva.Nombre}</th>
+                <th>{reserva.Correo}</th>
+                <th>{reserva.Telefono}</th>
+                <th>{fechaFormateada}</th>
+                <th>{reserva.Comensales}</th>
+            </tr>
+        )
+    })
+}
 
-                <tr key={Reservas.id}>
-                    <th>{Reservas.id}</th>
-                    <th>{Reservas.Nombre}</th>
-                    <th>{Reservas.Correo}</th>
-                    <th>{Reservas.Telefono}</th>
-                    <th>{Reservas.Fecha}</th>
-                    <th>{Reservas.Comensales}</th>
-                </tr>
-})
-       }     
       </tbody>
     </Table>
                 
@@ -63,5 +67,6 @@ export const TablaGetReservas = () => {
 
         </div>
   </>
-    );
+    )
 }
+
