@@ -1,51 +1,68 @@
-import { useState } from "react"
-
-import { collection, addDoc } from "firebase/firestore"
+import { doc, getDoc, updateDoc } from "firebase/firestore"
+import { useEffect, useState } from "react"
+import { useNavigate, useParams } from "react-router-dom"
 import { db } from "../../config/Firebase.config"
-import { useNavigate } from "react-router-dom"
-
 import { CrudForm } from "../CrudForm/CrudForm"
 
 
 
 
-export const CreateForm = () =>{
-      
+
+export const EditForm = () => {
+    
     const [Nombre, setNombre] = useState('')
     const [Correo, setCorreo] = useState('')
     const [Telefono, setTelefono] = useState('')
     const [Fecha, setFecha] = useState('dd-MM-yy')
     const [Comensales, setComensales] = useState(0)
 
+    const { id } = useParams()
     const navigate = useNavigate()
 
-    const ReservasCollectionReference =collection(db, 'Reservas')
-     
-    const onSubmit = async (event) => {
+    const updateReservas = async(id) =>{
+        const Reservas = await getDoc(doc(db, 'Reservas',  id))
+
+        if(Reservas.exists()){
+            setNombre(Reservas.data().Nombre)
+            setCorreo(Reservas.data().Correo)
+            setTelefono(Reservas.data().Telefono)
+            setFecha(Reservas.data().Fecha)
+            setComensales(Reservas.data().Comensales)
+        } else {
+            console.log('No pudimos enconrar la reserva que buscas :(')
+        }
+            
+    }
+
+    const onUpdate = async (event) =>{
         event.preventDefault()
-        const Reservas = {
+        const Reservas =doc(db, 'Reservas', id)
+
+        const data = {
             Nombre,
             Correo,
             Telefono,
             Fecha,
-            Comensales,
-            status: false
+            Comensales
         }
-        await addDoc( ReservasCollectionReference, Reservas)
+        await updateDoc(Reservas, data)
         navigate('/Creada')
     }
 
-    return(
-        <>
+    useEffect(() => {
+        updateReservas(id)
+    }, [])
+ 
+        return (
         
-        <div className="container">
+         <div className="container">
             <div className="row">
                 <div className="col">
-                    
+                    <h2>Editar reservacion</h2>
 
                     
-                    <CrudForm 
-                    handleSubmit={onSubmit}
+                    <CrudForm
+                    handleSubmit={onUpdate}
                     Nombre={Nombre}
                     setNombre={setNombre}
                     Correo={Correo}
@@ -56,8 +73,7 @@ export const CreateForm = () =>{
                     setFecha={setFecha}
                     Comensales={Comensales}
                     setComensales={setComensales}
-                    Button='Enviar'
-                
+                    Button='Editar'
                      />
                     
                          
@@ -66,6 +82,5 @@ export const CreateForm = () =>{
             </div>
         </div>
         
-        </>
     )
 }

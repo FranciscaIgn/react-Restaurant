@@ -155,6 +155,23 @@ p{
   width:80% ;
   height: 80%;
 }
+
+/*RESERVACIONES */
+
+.Reservaciones{
+  margin: 30px;
+  margin-bottom: 50px;
+}
+
+.titulo1{
+  color: #5D8990;
+  margin-bottom: 50px;
+}
+
+.titulo2{
+  color: #5D8990;
+  margin: 50px;
+}
  /*PLATOS*/
 
  .Platos{

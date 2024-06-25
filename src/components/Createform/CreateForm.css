@@ -1,0 +1,17 @@
+
+
+.container {
+    
+
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 18px;
+color:aliceblue;
+margin-left: 10px;
+font-family: "Inter", sans-serif;;
+}

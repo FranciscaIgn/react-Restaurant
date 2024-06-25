@@ -1,13 +1,14 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ImgMenuEstacion from '../../assets/ImgMenuEstacion';
+import { Container } from 'react-bootstrap';
 
 
 
 export const MenuplatosEstaciones = () =>{
     return (
  <>
-   <container className="Cards">
+   <Container className="Cards">
     <Card style={{ width: '18rem' }}>
     <Card.Img variant="top" src={ImgMenuEstacion [0].img} alt={ImgMenuEstacion [0].alt} />
       <Card.Body>
@@ -49,7 +50,7 @@ export const MenuplatosEstaciones = () =>{
         <Button className='Button1'>Ver más</Button>
       </Card.Body>
     </Card>
-    </container>
+    </Container>
  </>
     )
 }
@@ -58,7 +59,7 @@ export const MenuplatosEstaciones = () =>{
 export const MenuTragos = () => {
   return(
     <>
-    <container className="Cards2">
+    <Container className="Cards2">
     <Card style={{ width: '18rem' }}>
     <Card.Img  className="coctel1"  variant="top" src={ImgMenuEstacion [4].img} alt={ImgMenuEstacion [4].alt} />
       <Card.Body>
@@ -90,7 +91,7 @@ export const MenuTragos = () => {
         <Button className='Button1'>Ver más</Button>
       </Card.Body>
     </Card>
-    </container>
+    </Container>
     </>
   )
 }

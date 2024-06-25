@@ -1,3 +1,4 @@
+import { Container } from "react-bootstrap"
 import ImgPostres from "../assets/ImgPostres"
 import { NavBar } from "../components/NavBar/Navbar"
 
@@ -7,7 +8,7 @@ export const Postres = () => {
         <NavBar />
         <center>
              <h1 className="PostresName">P O S T R E S</h1>
-             <container className="Container1">
+             <Container className="Container1">
         <img className="Postres-img" src={ImgPostres [0].img} alt={ImgPostres [0].alt}  />
         <img className="Postres-img1" src={ImgPostres [5].img} alt={ImgPostres [5].alt}  />
         <img className="Postres-img" src={ImgPostres [2].img} alt={ImgPostres [2].alt}  />
@@ -20,7 +21,7 @@ export const Postres = () => {
         <img className="Postres-img" src={ImgPostres [9].img} alt={ImgPostres [9].alt}  />
         <img className="Postres-img1" src={ImgPostres [10].img} alt={ImgPostres [10].alt}  />
         <img className="Postres-img" src={ImgPostres [11].img} alt={ImgPostres [11].alt}  />
-        </container>
+        </Container>
         </center>
        
         </>
