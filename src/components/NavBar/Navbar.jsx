@@ -16,12 +16,12 @@ export const NavBar= () => {
             <Nav.Link href="/Nosotros">Nosotros</Nav.Link>
             <Nav.Link href="/Reservacion">Reservación</Nav.Link>
             <Nav.Link href="/Blog">Blog</Nav.Link>
-            <NavDropdown  title="Menú" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/Platos">Platos</NavDropdown.Item>
-              <NavDropdown.Item href="/Postres">
+            <NavDropdown title="Menú" id="basic-nav-dropdown">
+              <NavDropdown.Item className='menu' href="/Platos">Platos</NavDropdown.Item>
+              <NavDropdown.Item className='menu' href="/Postres">
                 Postres
               </NavDropdown.Item>
-              <NavDropdown.Item href="/Bebidas">Bebidas</NavDropdown.Item>
+              <NavDropdown.Item className='menu' href="/Bebidas">Bebidas</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
           </Nav>

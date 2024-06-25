@@ -1,7 +1,7 @@
 
 import "./footer.css"
 import ImagenesSueltas from "../../assets/ImagenesSueltas"
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 
 export const Footer = () => {
@@ -29,9 +29,9 @@ export const Footer = () => {
                      </div>
                  <div className="footer-info">
                    <h4>S í g u e n o s</h4>
-                   <p>Faceboock</p> <br></br>
-                   <p>Instagram</p> <br></br>
-                   <p>Youtube</p>
+                   <Link className="Redsocial">Faceboock</Link> <br></br>
+                   <Link className="Redsocial">Instagram</Link> <br></br>
+                   <Link className="Redsocial">Youtube</Link>
                    
                  </div>
             
