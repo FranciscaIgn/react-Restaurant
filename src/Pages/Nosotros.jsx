@@ -17,6 +17,8 @@ export const Nosotros = () => {
          
          <ImagenesNosotros />
 
+         <hr></hr>
+
             <p className="parrafoNosotros">Más allá de la simple decoración de un plato,
             las flores pueden ser un ingrediente que, a modo de sazonador,
             puede aportar sutiles sabores y matices. De todas formas,
@@ -32,6 +34,7 @@ export const Nosotros = () => {
             ¡Que a nadie se le ocurra pegarle un bocado a un ramo de flores de una floristería!</p>
             
             
+            <hr></hr>
             <Imagenesabajo />
             
             

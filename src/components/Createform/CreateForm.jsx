@@ -38,7 +38,7 @@ export const CreateForm = () =>{
     return(
         <>
         
-        <div className="container">
+        <div className="containerCrud">
             <div className="row">
                 <div className="col">
                     

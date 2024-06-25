@@ -5,7 +5,7 @@ import { db } from "../../config/Firebase.config"
 
 import { Link } from "react-router-dom"
 import { Button, Table } from "react-bootstrap"
-import { deleteReservacion } from "../../utils/deleteReservacion.jsx"
+import { deleteReserva } from "../../utils/deleteReserva"
 
 
 
@@ -36,9 +36,9 @@ export const TablaGetReservacion = () =>{
           <div className="col"></div>
 
           <Table striped bordered hover>
-      <thead>
+      <thead className="Tabla">
         <tr>
-          <th>#</th>
+          <th>Reserva</th>
           <th>Nombre</th>
           <th>Correo</th>
           <th>Telefono</th>
@@ -63,7 +63,7 @@ export const TablaGetReservacion = () =>{
                   <Link to={`/Edit/${Reservas.id}`} className="btn btn-warning mx-2 p-2"> 
                   <i className="fa-solid fa-user-pen"></i> </Link>
                 
-                  <Button className="buttoneliminar mx-2 p-2" onClick={() => {deleteReservacion (Reservas.id)} }>
+                  <Button className="buttoneliminar mx-2 p-2" onClick={() => {deleteReserva(Reservas.id)}}>
                   <i className="fa-solid fa-trash"></i>
                   </Button>
                 </td>

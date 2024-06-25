@@ -9,6 +9,11 @@ import { Bebidas } from "../Pages/Bebidas"
 import { ReservacionCreada } from "../Pages/ReservaciónCreada"
 import { EditPage } from "../Pages/Editpage/Editpage"
 
+
+
+
+
+
 export const RourterApp = () => {
     return (
         <>

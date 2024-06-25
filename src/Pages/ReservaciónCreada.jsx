@@ -8,8 +8,10 @@ export const ReservacionCreada = () => {
 
         <>
         <NavBar/>
-        <h2>Tu reservación se ha realizado con éxito </h2>
+        <h2 className="reservaExitosa">Tu reservación se ha realizado con éxito </h2>
         <TablaGetReservacion />
+
+        <hr></hr>
         <Footer/>
         </>
     )
