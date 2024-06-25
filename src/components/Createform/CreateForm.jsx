@@ -15,7 +15,7 @@ export const CreateForm = () =>{
     const [Correo, setCorreo] = useState('')
     const [Telefono, setTelefono] = useState('')
     const [Fecha, setFecha] = useState('dd-MM-yy')
-    const [Comensales, setComensales] = useState(0)
+    const [Comensales, setComensales] = useState('')
 
     const navigate = useNavigate()
 
