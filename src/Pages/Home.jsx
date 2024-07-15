@@ -4,7 +4,7 @@ import { NavBar } from "../components/NavBar/Navbar"
 import { ImagenLavanda } from "../components/ImagenesHome/Imageneshome"
 import { Carouselhome } from "../components/Carousel/Carousel"
 import { MenuplatosEstaciones } from "../components/MenuPlatos/MenuPlatos"
-
+import { Header } from "../components/Header/Header"
 
 
 
@@ -12,6 +12,7 @@ import { MenuplatosEstaciones } from "../components/MenuPlatos/MenuPlatos"
 export const Home = () => {
     return(
         <>
+        <Header />
         <NavBar />
         <ImagenesHome />
 

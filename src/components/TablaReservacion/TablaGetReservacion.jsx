@@ -63,7 +63,7 @@ export const TablaGetReservacion = () =>{
                   <Link to={`/Edit/${Reservas.id}`} className="btn btn-warning mx-2 p-2"> 
                   <i className="fa-solid fa-user-pen"></i> </Link>
                 
-                  <Button className="buttoneliminar mx-2 p-2" onClick={() => {deleteReserva(Reservas.id)}}>
+                  <Button className="buttoneliminar mx-2 p-2" onClick={() => {deleteReserva(Reservas.id), getReservas()}}>
                   <i className="fa-solid fa-trash"></i>
                   </Button>
                 </td>

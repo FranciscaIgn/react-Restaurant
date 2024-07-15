@@ -8,6 +8,9 @@ import { Reservaciones } from "../Pages/Reservaciones"
 import { Bebidas } from "../Pages/Bebidas"
 import { ReservacionCreada } from "../Pages/ReservaciónCreada"
 import { EditPage } from "../Pages/Editpage/Editpage"
+import { Header } from "../components/Header/Header"
+import { SignUp } from "../Pages/SignUp"
+import { Login } from "../Pages/Login"
 
 
 
@@ -27,6 +30,11 @@ export const RourterApp = () => {
         <Route path="/Bebidas" element={<Bebidas />} />
         <Route path="/Creada" element={<ReservacionCreada />} />
         <Route path="/Edit/:id" element={<EditPage/>} />
+        <Route path="/" element={<Header/>}/>
+        <Route path="/SignUp" element={<SignUp/>}/>
+        <Route path="/login" element={<Login/>}/>
+            
+        
         
         </Routes>
         </>

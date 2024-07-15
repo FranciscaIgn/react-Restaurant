@@ -1,10 +1,15 @@
+import { UserState } from "./context/UserState"
 import { RourterApp } from "./Router/RouterApp"
 
 
-export const App =() => {
+
+export const App = () => {
   return (
     <>
-      <RourterApp />
+    <UserState>
+    <RourterApp />
+    </UserState>
+      
     </>
   )
 }
