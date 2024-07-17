@@ -1,11 +1,15 @@
 import Campo from "./img/Campo.jpg"
-import Restaurant1 from "./img/Restaurant1.jpg"
-import restaurant2 from "./img/restaurant2.jpg"
-import restaurant3 from "./img/restaurant3.jpg"
+import restobar3 from "./img/restobar3.jpg"
+import restobar10 from "./img/restobar10.jpg"
+import restobar11 from "./img/restobar11.jpg"
 import restaurant4 from "./img/restaurant4.jpg"
 import restaurant5 from "./img/restaurant5.jpg"
 import restaurant6 from "./img/restaurant6.jpg"
 import Logo from "./img/Logo.png"
+import flores from "./img/flores.jpg"
+import conserva from "./img/conserva.jpg"
+import geranio from "./img/geranio.jpg"
+import alfajor from "./img/alfajor.jpg"
 
 export default [
     {
@@ -15,19 +19,19 @@ export default [
         "alt": "flores para nosotros"
     },
     {
-        "img" :Restaurant1 ,
+        "img" :restobar3 ,
         "titulo" : "comida ",
         "descripcion": "restaurant decoracion",
         "alt": "decoracion "
     },
     {
-        "img" :restaurant2 ,
+        "img" :restobar10 ,
         "titulo" : "restaurant 3",
         "descripcion": "restaurant decoracion",
         "alt": "decoracion"
     },
     {
-        "img" : restaurant3,
+        "img" : restobar11,
         "titulo" : "restaurant 3",
         "descripcion": "restaurant decoracion",
         "alt": "decoracion exterior"
@@ -56,5 +60,31 @@ export default [
         "descripcion": "Logo restaurant",
         "alt": "Logo"
     },
+    {
+        "img" : flores,
+        "titulo": "imagen blog",
+        "descripcion": "imagen para el blog",
+        "alt": "blog"
+    },
+    {
+        "img" : conserva,
+        "titulo": "coservarflores",
+        "descripcion": "imagen para el blog",
+        "alt": "blog"
+    },
+    {
+        "img" : geranio,
+        "titulo": "geraniococina",
+        "descripcion": "imagen para el blog",
+        "alt": "blog"
+    },
+    {
+        "img" : alfajor,
+        "titulo": "geraniococina",
+        "descripcion": "imagen para el blog",
+        "alt": "blog"
+    }
+
+
 
 ]

@@ -6,6 +6,75 @@
   box-sizing: border-box;
 }
 
+/*HEADER*/
+
+nav {
+  background-color:#5D8990;
+  padding: 1rem;
+  
+}
+ul{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+.containerwrite{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+
+li{
+  list-style: none;
+}
+
+
+.write1{
+  color:#000000;
+  font-family: "Inter", sans-serif;
+  margin-left: 100px;
+}
+
+.write1:hover {
+  color: #ffffff;
+}
+
+.write2{
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  margin-right: 100px;
+}
+
+.write2:hover {
+  color: #ffffff;
+}
+
+.write3{
+  color: #000000;
+  font-family: "Inter", sans-serif;
+}
+
+.write3:hover{
+  color: #ffffff;
+
+}
+.write4{
+  color: #000000;
+  font-family: "Inter", sans-serif;
+}
+
+.write4:hover{
+  color: #ffffff;
+}
+
+.containerdatos{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+
+
+
 
 
 /*NAVBAR*/
@@ -24,18 +93,19 @@ a{
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
-  color:aliceblue;
+  color:#5D8990;
   margin-left: 10px;
-  font-family: "Inter", sans-serif;;
+  font-family: "Inter", sans-serif;
 }
 
+
 .NavBar{
-  background-color: #5D8990;
+  background-color: #ffffff;
   
 }
 
 .dropdown-menu a{
-  color: #0c090d !important;
+  color:#5D8990 !important;
 
 
 }
@@ -60,17 +130,18 @@ a{
  .Lavanda {
   width: 100%;
   height: 688px;
-  margin-top: 100px;
+  margin-top: 20px;
  }
 
  h1{
   color: hsl(291, 14%, 45%);
+
  }
 
  .ImagenesHome{
 width:  506px;
 height: 600px;
-padding-bottom: 200px;
+padding-bottom: 100px;
 margin-top: 200px;
  }
 
@@ -80,6 +151,7 @@ margin-top: 200px;
   align-items: center;
   padding-left: 5%;
   margin-bottom: 50px;
+  margin-top: 60px;
   
   
  }
@@ -92,12 +164,30 @@ margin-bottom: 70px;
   color: #7e6383;
  }
 
- .title{
+ .title1{
+    color: #272128;
+    margin-left: 90px;
+   }
+
+   .title2{
+    color: #272128;
+    margin-left: 95px;
+   }
+ 
+
+ .title3{
   color: #272128;
+  margin-left: 85px;
+ }
+
+ .title4{
+  color: #272128;
+  margin-left: 95px;
  }
 
  .Button1{
   background-color: #5D8990;
+  margin-left: 25px;
  }
 
 /* NOSOTROS */
@@ -172,7 +262,7 @@ p{
 /*RESERVACIONES */
 
 .Reservaciones{
-  margin-top: 50px;
+  margin-top: 200px;
   margin-bottom: 50px;
   font-family: "Inter", sans-serif;
 
@@ -189,14 +279,17 @@ p{
   margin-bottom: 20px;
   font-family: "Inter", sans-serif;
   font-size: 18px;
+  margin-top: 80px;
+
 
 }
 
 .titulo2{
   color: #5D8990;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   font-family: "Inter", sans-serif;
   font-size: 18px;
+  
 
 }
 form{
@@ -208,9 +301,11 @@ form{
   width: 340px;
 }
 
-.Button1{
+.Button3{
   width: 200px;
   margin-top: 25px;
+  background-color: #5D8990;
+  
    
 }
  .Crud {
@@ -247,10 +342,11 @@ form{
 
  .Platos{
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
  }
  .ParrafoPlatos{
-  background-color: #5D8990;
+ 
+  color:#3a2c3c;
  }
 
  .cardtext {
@@ -265,6 +361,15 @@ form{
   margin-bottom: 50px;
  }
 
+ .Cards3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding-left: 5%;
+  margin-bottom: 50px;
+  margin-top: 100px;
+ }
+
  .cocotel1{
   height: 5px;
  }
@@ -272,45 +377,250 @@ form{
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.Postre{
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
 
-.Postres{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  padding-left: 5%;
-  margin-bottom: 50px;
-}
+.Button1{
+  background-color: #5D8990;
+  margin-right: 10px;
+ }
 
-.Postres-img{
-  width: 400px;
-  height: 400px;
-}
+ .Buttonmenu{
+  background-color: #5D8990;
+  margin-left: 80px;
+  margin-top: 30px;
+ }
 
-.Postres-img1{
-  width: 400px;
-  height: 550px;
-}
+ .Buttontragos{
+  background-color: #5D8990;
+  
+  margin-top: 30px;
+ }
+
+ .Buttonpostres{
+  background-color: #5D8990;
+  margin-left: 80px;
+  margin-top: 30px;
+ }
+ .title7{
+  color: #272128;
+    margin-left: 90px;
+    font-family: "Inter", sans-serif;
+  font-size: 25px;
+ }
+ .title8{
+  color: #272128;
+    margin-left: 80px;
+    font-family: "Inter", sans-serif;
+  font-size: 25px;
+ }
+ .title9{
+  color: #272128;
+    margin-left: 75px;
+    font-family: "Inter", sans-serif;
+  font-size: 25px;
+ }
 
 .PostresName{
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+
+ /* BLOG */
+
+ .Blog{
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  margin-bottom: 80px;
+  color: #5d8990;
+ }
+
+ .titleblog{
+  margin-top: 100px;
   margin-bottom: 50px;
+
+ }
+
+ .imagenflor{
+  width: 60%;
+  height: 480px;
+  margin-top: 50px;
+  margin-left: 300px;
+ }
+
+ .Cometeelmundo{
+  font-size: 30px;
+ }
+
+ .Cardblog{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin-bottom: 50px;
+  margin: 200px;
+  margin-right: 100px;
+ }
+
+ .conserva{
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  margin-bottom: 80px;
+ }
+
+ .comestibles{
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+ }
+ .limite{
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  margin-bottom: 80px;
+ }
+
+ .Buttonflor{
+  background-color: #5D8990;
+  margin-left: 85px;
+ }
+ .Buttonflores{
+  background-color: #5D8990;
+  margin-left: 85px;
+  margin-top: 55px;
+ }
+
+ /* REGISTRO*/
+
+ .resgistro{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  color:#7e6383;
+ }
+ 
+ .contenedorinfo{
+  background-color: #5D8990;
+  color:aliceblue;
+  border-radius: 7px;
+  margin: 5px;
+ }
+.iniciales{
+  text-align: left;
+  margin-left: 15px;
+ 
 }
+ .nombre{
+  font-family: "Inter", sans-serif;
+  color: #5D8990;
+  margin-left: 10px;
+ }
+
+ .apellido{
+  font-family: "Inter", sans-serif;
+  color: #5D8990;
+  margin-left: 10px;
+ }
+
+ .rut{
+  font-family: "Inter", sans-serif;
+  color: #5D8990;
+  margin-left: 10px;
+ }
+
+ .telefono{
+  font-family: "Inter", sans-serif;
+  color: #5D8990;
+  margin-left: 10px;
+ }
+ .email{
+  font-family: "Inter", sans-serif;
+  color: #5D8990;
+  margin-left: 10px;
+ }
+
+ .contraseña{
+  font-family: "Inter", sans-serif;
+  color: #5D8990;
+  margin-left: 10px;
+ }
+
+ .buttonregistro{
+  background-color: #5D8990;
+  color:aliceblue;
+  padding: 8px;
+  margin-top: 20px;
+  border-radius: 10px;
+ }
 
 
+ /*LOGIN*/
 
-
-
-
-
-
-.Footer{
-  background-color: #9CBBAC;
+ .login{
+  margin-top: 100px;
   
-}
+ }
+
+ .iniciasesion{
+  margin-bottom: 70px;
+  font-family: "Inter", sans-serif;
+  font-size: 35px;
+  color:#7e6383;
+ }
+
+ .buttonlogin{
+  background-color: #5D8990;
+  color:aliceblue;
+  padding: 8px;
+  margin-top: 20px;
+  border-radius: 10px;
+ }
+
+ .buttonlogin:hover{
+  background-color: #7e6383;
+ }
+ 
+ .correo{
+  margin: 5px;
+ }
+ .correo2{
+  background-color:#709196;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  color:aliceblue
+ }
+
+ .contenedorlogin{
+  display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    color: #5D8990;
+ }
+
+ .contenedorlogin2{
+  display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    color: #5D8990;
+ }
+
+ .clave{
+  margin: 5px;
+  margin-top: 15px;
+  
+ }
+
+ .clave2{
+  background-color: #709196;
+ border-radius: 7px;
+ margin-bottom: 10px;
+ color:aliceblue
+ }
+
+
+
+
+
+
 
 
 

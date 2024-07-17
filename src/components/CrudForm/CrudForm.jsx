@@ -50,7 +50,7 @@ export const CrudForm = ({handleSubmit, Nombre, setNombre, Correo, setCorreo, Te
                  onChange={ (event) => setComensales(event.target.value)} />
 
             </div>
-                <Button type="submit"  className='Button1'>Enviar</Button>
+                <Button type="submit"  className='Button3'>Enviar</Button>
 
          </form>
         </>

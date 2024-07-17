@@ -1,16 +1,15 @@
+import { Footer } from "../components/Footer/Footer"
 import { Header } from "../components/Header/Header"
 import { NavBar } from "../components/NavBar/Navbar"
-import { SignUpform } from "../components/SiginUp/SignUpform"
 
-export const SignUp = () =>{
+
+export const UserPage = () =>{
     return(
         <>
-        <NavBar/>
         <Header/>
-        <center>
-            <SignUpform/>
-        </center>
+        <NavBar/>
         
+        <Footer/>
         </>
     )
 }

@@ -11,6 +11,9 @@ import { EditPage } from "../Pages/Editpage/Editpage"
 import { Header } from "../components/Header/Header"
 import { SignUp } from "../Pages/SignUp"
 import { Login } from "../Pages/Login"
+import { UserPage } from "../Pages/UsersPage"
+import { Blog } from "../Pages/Blog"
+import { Flores } from "../Pages/Flores"
 
 
 
@@ -33,6 +36,9 @@ export const RourterApp = () => {
         <Route path="/" element={<Header/>}/>
         <Route path="/SignUp" element={<SignUp/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/usuarios" element={<UserPage/>}/>
+        <Route path="/Blog" element={<Blog/>}/>
+        <Route path="/Flores" element={<Flores/>}/>
             
         
         

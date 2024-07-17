@@ -1,6 +1,7 @@
 import { useContext, useState } from "react"
-import UsersContext from "../../context/UserContext"
+import UsersContext from "../../context/userContext/UserContext"
 import { useNavigate } from "react-router-dom"
+
 
 
 export const SignUpform = () =>{
@@ -18,7 +19,7 @@ export const SignUpform = () =>{
        rut: '',
        telefono: '',
        correo: '',
-       contraseña: ''
+       clave: ''
     })
 
     const onChangeData = (event) => {
@@ -36,13 +37,13 @@ export const SignUpform = () =>{
     }
     return(
         <>
-        <div>Resgistrate como Usuario</div>
-        <form onSubmit={(event)=> {onSubmit(event)}}>
+        <div className="resgistro">Resgistrate como Usuario</div>
+        <form className="formularioregistro" onSubmit={(event) => {onSubmit(event)}}>
 
-            <div>
-                <label htmlFor="nombre">Nombre</label>
+            <div className="iniciales">
+                <label className="nombre" htmlFor="nombre">Nombre</label>
                 <div>
-                    <input 
+                    <input className="contenedorinfo"
                     type="text"
                     name="nombre"
                     id="nombre"
@@ -51,10 +52,10 @@ export const SignUpform = () =>{
                 </div>
             </div>
 
-            <div>
-                <label htmlFor="apellido">Apellido</label>
+            <div className="iniciales" >
+                <label className="apellido" htmlFor="apellido">Apellido</label>
                 <div>
-                    <input 
+                    <input className="contenedorinfo"
                     type="text"
                     name="apellido"
                     id="apellido"
@@ -63,10 +64,10 @@ export const SignUpform = () =>{
                 </div>
             </div>
 
-            <div>
-                <label htmlFor="rut">Rut</label>
+            <div className="iniciales">
+                <label className="rut" htmlFor="rut">Rut</label>
                 <div>
-                    <input 
+                    <input className="contenedorinfo"
                     type="text"
                     name="rut"
                     id="rut"
@@ -75,11 +76,11 @@ export const SignUpform = () =>{
                 </div>
             </div>
 
-            <div>
-                <label htmlFor="telefono">Telefono</label>
+            <div className="iniciales">
+                <label className="telefono" htmlFor="telefono">Telefono</label>
                 <div>
-                    <input 
-                    type="number"
+                    <input className="contenedorinfo"
+                    type="text"
                     name="telefono"
                     id="telefono"
                     onChange={(event)=> {onChangeData(event)}}
@@ -87,11 +88,11 @@ export const SignUpform = () =>{
                 </div>
             </div>
 
-            <div>
-                <label htmlFor="correo">Correo</label>
+            <div className="iniciales">
+                <label className="email" htmlFor="correo">Correo</label>
                 <div>
-                    <input 
-                    type="text"
+                    <input className="contenedorinfo"
+                    type="email"
                     name="correo"
                     id="correo"
                     onChange={(event)=> {onChangeData(event)}}
@@ -99,20 +100,20 @@ export const SignUpform = () =>{
                 </div>
             </div>
 
-            <div>
-                <label htmlFor="contraseña">Contraseña</label>
+            <div className="iniciales">
+                <label className="contraseña" htmlFor="clave">Contraseña</label>
                 <div>
-                    <input 
+                    <input className="contenedorinfo"
                     type="password"
-                    name="contraseña"
-                    id="contraseña"
+                    name="clave"
+                    id="clave"
                     onChange={(event)=> {onChangeData(event)}}
                     required />
                 </div>
             </div>
             
             <div>
-                <button type="submit">Registrame</button>
+                <button className="buttonregistro" type="submit">Registrame</button>
             </div>
 
         </form>

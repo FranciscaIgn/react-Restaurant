@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from "react"
-import UsersContext from "../../context/UserContext"
 import { useNavigate } from "react-router-dom"
+import UsersContext from "../../context/userContext/UserContext"
 
 
-export const LoginForm = () =>{
+export const LoginForm = () => {
 
     const navigate = useNavigate()
     
@@ -13,15 +13,16 @@ export const LoginForm = () =>{
         loginUser,
         authStatus,
         verifyToken
-    } =UserContext
+    } = UserContext
 
     const [data, setData] = useState({
         correo: '',
-        password: ''
+        clave: ''
     })
 
     useEffect(() =>{
         verifyToken()
+        
      }, [authStatus, verifyToken] )
 
      const onChangeData = (event) => {
@@ -41,37 +42,47 @@ export const LoginForm = () =>{
 
      return (
         <>
-            <div>
-                <h2>Inicia sesión</h2>
-                <form onSubmit={(event) => {onSubmitData(event)}}>
+
+        
+            <div className="login">
+                <h2 className="iniciasesion">Inicia sesión</h2>
+                <form onSubmit={(event) => {
+                    onSubmitData(event);
+                    }}
+                    >
                     
-                    <div>
-                        <label htmlFor="correo">Tu correo</label>
-                        <input 
+                    <div className="contenedorlogin">
+                        <label className="correo" htmlFor="correo">Tu correo</label>
+                        <input className="correo2"
                         type="email" 
                         name="correo"
                         id="correo"
                         placeholder="tucorreo@gmail.com"
-                        onChange={(event) =>{onChangeData(event)} }
-                        required/>
+                        onChange={(event) =>{
+                            onChangeData(event);
+                        }}
+                        required
+                        />
                     </div>
 
-                    <div>
-                        <label htmlFor="contraseña">Tu contraseña</label>
-                        <input 
+                    <div className="contenedorlogin2">
+                        <label className="clave" htmlFor="clave">Tu contraseña</label>
+                        <input className="clave2"
                         type="password"
-                        name="contraseña"
-                        id="contraseña"
+                        name="clave"
+                        id="clave"
                         placeholder="***********"
-                        onChange={(event) =>{onChangeData(event)} }
+                        onChange={(event) =>{
+                            onChangeData(event);
+                        }}
                         required
                         />
                     </div>
                     <div>
-                        <button type="submit">Iniciar sesión</button>
+                        <button className="buttonlogin" type="submit">Iniciar sesión</button>
                     </div>
                 </form>
             </div>
         </>
-     )
+     );
 }

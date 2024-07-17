@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Satisfy&display=swap');
 .footer {
-    background-color: #5D8990;
+    background-color: #ffffff;
     height: 200px;
     
 }
@@ -32,7 +32,7 @@
     font-family: "Inter", sans-serif;
     text-decoration:underline;
     font-size: 20px;
-    color: aliceblue;
+    color: #5D8990;
     font-weight: 500;
     display: block;
     
@@ -41,20 +41,23 @@
 .footer-info p {
     font-family: "Inter", sans-serif;
     font-size: 13px;
-    color: aliceblue;
+    color: #5D8990;
     padding: 0;
     margin-left: 0;
     display:inline-flex;
 }
 
 .NavLink {
-    color: aliceblue;
+    color: #5D8990;
     display: block;
 }
 
 .Redsocial{
-    color: aliceblue;
+    color: #5D8990;
 }
 
+.Redsocial:hover{
+    color:  #7e6383;
+}
 
 

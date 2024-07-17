@@ -1,6 +1,7 @@
 
 
 import { Footer } from "../components/Footer/Footer"
+import { Header } from "../components/Header/Header"
 import { ImagenesNosotros, Imagenesabajo } from "../components/ImagenNosotros/ImagenNosotros"
 import { NavBar } from "../components/NavBar/Navbar"
 
@@ -10,7 +11,8 @@ import { NavBar } from "../components/NavBar/Navbar"
 export const Nosotros = () => {
     return(
         <>
-         
+
+        <Header/> 
          <NavBar />
          
          

@@ -13,7 +13,9 @@ export const Home = () => {
     return(
         <>
         <Header />
+
         <NavBar />
+
         <ImagenesHome />
 
         <center>
@@ -22,18 +24,11 @@ export const Home = () => {
          </center>
 
          <MenuplatosEstaciones />   
+
+            <Carouselhome/>
             
          <ImagenLavanda />
            
-
-        
-
-
-        <Carouselhome/>
-            
-        
-
-        
         <Footer />
         </>
     )
